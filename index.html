@@ -7,6 +7,24 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
+    /* Cover Page को छोड़कर अंदर के पूरे मैटर का फॉन्ट 30% बड़ा (स्क्रीन और प्रिंट दोनों में) */
+    #policyContentArea table.print-wrapper > tbody div:not(.policy-cover-page):not(.policy-cover-page *),
+    #policyContentArea table.print-wrapper > tbody li {
+      font-size: 1.125rem !important; /* ~18px (14px से 30% अधिक) */
+      line-height: 1.65 !important;
+    }
+
+    #policyContentArea table.print-wrapper > tbody h3:not(.policy-cover-page *) {
+      font-size: 1.32rem !important; /* ~21px (16px से 30% अधिक) */
+      line-height: 1.4 !important;
+    }
+
+    #policyContentArea table.print-wrapper > tbody table:not(.policy-cover-page *) td,
+    #policyContentArea table.print-wrapper > tbody table:not(.policy-cover-page *) th {
+      font-size: 0.975rem !important; /* ~15.6px (12px से 30% अधिक) */
+      line-height: 1.45 !important;
+    }
+
     @media print {
       @page {
         size: A4;
