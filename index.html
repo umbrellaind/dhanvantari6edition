@@ -31,6 +31,21 @@
       table.print-wrapper > tbody > tr > td { border: none !important; padding: 0 !important; }
       .doc-footer-space { padding-top: 12px; }
       .doc-header-space { padding-bottom: 10px; }
+
+      /* हरे घेरे वाला हिस्सा पूरे Cover Page (Page 1) पर बीचोबीच छपे और 1. Objective Page 2 से शुरू हो */
+      .policy-cover-page {
+        page-break-after: always !important;
+        break-after: page !important;
+        min-height: 175mm;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border: 1.5px solid #cbd5e1 !important;
+        background: #f8fafc !important;
+        padding: 24px !important;
+        margin-top: 10mm !important;
+      }
     }
   </style>
 </head>
